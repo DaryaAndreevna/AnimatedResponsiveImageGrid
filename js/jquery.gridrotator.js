@@ -56,8 +56,10 @@
 	// http://www.hardcode.nl/subcategory_1/article_317-array-shuffle-function
 	function shuffle(a) {
 		var i=a.length,p,t;
+		var max = a.length;
+		var min = 0;
 		while (i--) {
-			p = Math.floor(Math.random()*this.length);
+			p = Math.floor(Math.random()*(max - min) + min);
 			t = a[i];
 			a[i]=a[p];
 			a[p]=t;
