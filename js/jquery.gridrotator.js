@@ -118,6 +118,7 @@
 		rows : 4,
 		// number of columns
 		columns : 10,
+		w1560 : { rows : 3, columns : 10 },
 		w1024 : { rows : 3, columns : 8 },
 		w768 : {rows : 3,columns : 7 },
 		w480 : {rows : 3,columns : 5 },
@@ -403,6 +404,7 @@
 				case ( c_w < 480 ) : this.rows = this.options.w480.rows; this.columns = this.options.w480.columns; break;
 				case ( c_w < 768 ) : this.rows = this.options.w768.rows; this.columns = this.options.w768.columns; break;
 				case ( c_w < 1024 ) : this.rows = this.options.w1024.rows; this.columns = this.options.w1024.columns; break;
+				case ( c_w > 1560 ) : this.rows = this.options.w1560.rows; this.columns = this.options.w1560.columns; break;
 				default : this.rows = this.options.rows; this.columns = this.options.columns; break;
 			}
 
